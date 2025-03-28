@@ -46,8 +46,8 @@ class StateMachine implements StateMachineInterface
     public function __construct(
         $object,
         array $config,
-        EventDispatcherInterface $dispatcher      = null,
-        CallbackFactoryInterface $callbackFactory = null
+        ?EventDispatcherInterface $dispatcher      = null,
+        ?CallbackFactoryInterface $callbackFactory = null
     ) {
         $this->object          = $object;
         $this->dispatcher      = $dispatcher;
